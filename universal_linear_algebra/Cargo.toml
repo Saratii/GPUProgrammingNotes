@@ -1,0 +1,16 @@
+[package]
+name = "universal_linear_algebra"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "universal_linear_algebra"
+crate-type = ["cdylib"]
+
+[dependencies]
+bytemuck = "1.18.0"
+flume = "0.11.0"
+pollster = "0.3.0"
+pyo3 = { version = "0.22", features = ["extension-module", "experimental-async"] }
+wgpu = "22.1.0"
